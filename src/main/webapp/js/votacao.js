@@ -116,9 +116,10 @@ $scope.updateRanking = function(login,email){
      type: "POST",
       data:'login='+login+'&email='+email,
       url: '/vote-no-filme/movies/addUser',
-      async: false      
-    }).always(function(result){       
+      async: false,
+      complete : function(result){       
       postVotes;
+      }
     });
   }
 }
