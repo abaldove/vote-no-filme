@@ -64,7 +64,7 @@
           <div id="week_movie_content_slide" collapse="weekMovieIsCollapsed" style="padding-top:20px;">
               <div class="well well-large">
                 <p><b>Nome:</b> {{weekMovie.name}}</p>
-                <p><b>Nota IMDB:</b><rating value="{{weekMovie.imdbRating}}" max="10" readonly="true"></rating>
+                <p><b>Nota IMDB:</b><rating value="weekMovie.imdbRating" max="10" readonly="true"></rating>
                 <span class="badge badge-inverse" ng-show="true">{{weekMovie.imdbRating}}/ 10</span></p>
                 <p><b>Lançamento:</b> {{weekMovie.releaseDate}}</p>
                 <p><b>Sinopse:</b> {{weekMovie.sinopse}}</p>
@@ -86,7 +86,7 @@
             <div id="movie_content_slide" collapse="isCollapsed">
               <div class="well well-large">
                 <p><b>Name:</b> {{movies[position].name}}</p>
-                <p><b>Nota IMDB:</b><rating value="{{movies[position].imdbRating}}" max="10" readonly="true"></rating>
+                <p><b>Nota IMDB:</b><rating value="movies[position].imdbRating" max="10" readonly="true"></rating>
                 <span class="badge badge-inverse" ng-show="true">{{movies[position].imdbRating}}/ 10</span></p>       
                 <p><b>Lançamento:</b> {{movies[position].releaseDate}}</p>
                 <p><b>Sinopse:</b> {{movies[position].sinopse}}</p>
