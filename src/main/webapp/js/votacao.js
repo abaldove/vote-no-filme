@@ -18,6 +18,7 @@ function VotacoCtrl($scope,$http) {
     $scope.position = pos;
   };
 
+
   $scope.updateCarosel = function()
   {
     $.getJSON('/vote-no-filme/movies', function (json) {
@@ -31,7 +32,8 @@ function VotacoCtrl($scope,$http) {
                        image: "img/"+value.posterName,
                        name: value.name,
                        sinopse: value.sinopse,
-                       imdbRating: value.imdbRating,
+                       relaseDate: value.formatedReleaseDate,
+                       imdbRating: value.imdbRating,                       
                        movieId:value.id
                       };
                 }else{                 
@@ -40,6 +42,7 @@ function VotacoCtrl($scope,$http) {
                          name: value.name,
                          sinopse: value.sinopse,
                          imdbRating: value.imdbRating,
+                         relaseDate: value.formatedReleaseDate,
                          movieId:value.id
                        });
                     }
