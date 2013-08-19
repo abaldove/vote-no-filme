@@ -32,7 +32,7 @@ function VotacoCtrl($scope,$http) {
                        image: "img/"+value.posterName,
                        name: value.name,
                        sinopse: value.sinopse,
-                       relaseDate: value.formatedReleaseDate,
+                       releaseDate: value.formatedReleaseDate,
                        imdbRating: value.imdbRating,                       
                        movieId:value.id
                       };
@@ -42,7 +42,7 @@ function VotacoCtrl($scope,$http) {
                          name: value.name,
                          sinopse: value.sinopse,
                          imdbRating: value.imdbRating,
-                         relaseDate: value.formatedReleaseDate,
+                         releaseDate: value.formatedReleaseDate,
                          movieId:value.id
                        });
                     }
