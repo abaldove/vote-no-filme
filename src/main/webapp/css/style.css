@@ -1,0 +1,168 @@
+@font-face {
+font-family: 'FontAwesome';
+src: url('http://aozora.github.io/bootplus/assets/font/fontawesome-webfont.eot")?v=3.1.1');
+src: url('http://aozora.github.io/bootplus/assets/font/fontawesome-webfont.eot")?#iefix&v=3.1.1') format('embedded-opentype'),
+url('http://aozora.github.io/bootplus/assets/font/fontawesome-webfont.woff")?v=3.1.1') format('woff'),
+url('http://aozora.github.io/bootplus/assets/font/fontawesome-webfont.ttf")?v=3.1.1') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.btn_vota{
+
+}
+.input-field{
+  
+}
+.votecard div {
+position: relative;
+overflow: hidden;
+width: 63px;
+height: 43px;
+}
+.votecard em {
+display: block;
+position: relative;
+width: 63px;
+height: 33px;
+padding: 6px 0 6px 0;
+font: normal 24px/24px "Helvetica Neue","Helvetica","Arial",Sans-serif;
+color: #45453f;
+}
+.votecard strong {
+font-weight: bold;
+}
+.votecard span {
+font-size: 10px;
+line-height: 10px;
+display: block;
+color: #9a9a94;
+}
+.img-fix{
+margin:auto;
+display:block;
+height: auto;
+}
+.p-fix{
+margin: 0px 0px 10px;
+color: rgb(255, 255, 255);
+line-height: 20px;
+margin-bottom: 0px;
+}
+.div-descricao {
+position: absolute;
+left: 0px;
+right: 0px;
+bottom: 0px;
+padding: 15px;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.75);
+background-color: rgba(0, 0, 0, 0.75);
+background-image: none;
+background-repeat: repeat;
+background-attachment: scroll;
+background-position: 0% 0%;
+background-clip: border-box;
+background-origin: padding-box;
+background-size: auto auto;
+padding-top: 15px;
+padding-right: 15px;
+padding-bottom: 15px;
+}
+.div-header{
+background-color:rgb(238, 238, 238);
+height: 200px;
+}
+/* Featurettes
+------------------------- */
+.featurette-divider {
+margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+.featurette {
+padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+overflow: hidden; /* Vertically center images part 2: clear their floats. */
+}
+.featurette-image {
+margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+}
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+.featurette-image.pull-left {
+margin-right: 40px;
+}
+.featurette-image.pull-right {
+margin-left: 40px;
+}
+/* Thin out the marketing headings */
+.featurette-heading {
+font-size: 50px;
+font-weight: 300;
+line-height: 1;
+letter-spacing: -1px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 1100px) {
+.container.navbar-wrapper {
+margin-bottom: 0;
+width: auto;
+}
+.navbar-inner {
+border-radius: 0;
+margin: -20px 0;
+}
+.carousel .item {
+height: 500px;
+}
+.carousel img {
+width: auto;
+height: 500px;
+}
+.featurette {
+height: auto;
+padding: 0;
+}
+.featurette-image.pull-left,
+.featurette-image.pull-right {
+display: block;
+float: none;
+max-width: 100%;
+margin: 0 auto 20px;
+}
+}
+@media (max-width: 767px) {
+.navbar-inner {
+margin: -20px;
+}
+.carousel {
+margin-left: -20px;
+margin-right: -20px;
+}
+.carousel .container {
+}
+.carousel .item {
+height: 300px;
+}
+.carousel img {
+height: 300px;
+}
+.carousel-caption {
+width: 65%;
+padding: 0 70px;
+margin-top: 100px;
+}
+.carousel-caption h1 {
+font-size: 30px;
+}
+.carousel-caption .lead,
+.carousel-caption .btn {
+font-size: 18px;
+}
+.marketing .span4 + .span4 {
+margin-top: 40px;
+}
+.featurette-heading {
+font-size: 30px;
+}
+.featurette .lead {
+font-size: 18px;
+line-height: 1.5;
+}
+}

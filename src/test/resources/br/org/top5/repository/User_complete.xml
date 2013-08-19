@@ -1,0 +1,11 @@
+<dataset>
+	<Movie id_movie="1" name="Super Man" weekmovie="1" sinopse="Filme ruim" releaseDate="2011-08-25" imdbid="123456" postername="super.jpg"/>
+	<Movie id_movie="2" name="Wolverine" weekmovie="0" sinopse="Filme novo" releaseDate="2011-08-30" imdbid="789545" postername="wolverine.jpg"/>
+	<Users id_user="1" email="usuario1@gmail.com" login="usuario1"/>
+	<Users id_user="2" email="usuario2@gmail.com" login="usuario2"/>
+	<Vote id_vote="1" voteDate="2013-04-05" id_movie="1" id_user="1"/>
+	<Vote id_vote="3" voteDate="2013-04-06" id_movie="1" id_user="2"/>
+	<Vote id_vote="4" voteDate="2013-04-06" id_movie="2" id_user="1"/>
+	<Vote id_vote="5" voteDate="2013-04-06" id_movie="2" id_user="2"/>
+	<Vote id_vote="6" voteDate="2013-04-06" id_movie="2" id_user="1"/>
+</dataset>

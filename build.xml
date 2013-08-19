@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="VoteNoFilme" default="hsqldb" basedir=".">
+
+    <!-- INICIO BASE DE DADOS  ========================================================================================================== -->
+    <target name="hsqldb" description="hsqldb-server-startup">
+        <java classname="org.hsqldb.Server" classpath="target/dependency/hsqldb.jar" fork="on" spawn="true">
+            <arg line="-port 55000 -database database/top5db -dbname.0 top5db" />
+        </java>
+    </target>
+    <target name="client">
+        <java classname="org.hsqldb.util.DatabaseManager" classpath="target/dependency/hsqldb.jar" fork="true" spawn="true">
+            <arg line="-url jdbc:hsqldb:hsql://127.0.0.1:55000" />
+            <arg line="-user sa" />
+        </java>
+    </target>
+    
+    <target name="sqltool">
+        <copy file="sqltool.rc" tofile="${user.home}/sqltool.rc"/>
+        <java classname="org.hsqldb.util.SqlTool" classpath="target/dependency/hsqldb.jar" fork="true" spawn="true">
+            <arg line="top5db" />
+            <arg line="target/test-classes/001_schema.sql" />
+        </java>
+    </target>
+<!-- sqltool.rc
+    urlid travelsmart
+    url jdbc:hsqldb:hsql://127.0.0.1:55000
+    username sa
+    password
+    -->
+    
+    <!-- FIM BASE DE DADOS  ========================================================================================================== -->
+</project>
